@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0);
+    min-height: 100vh;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20);
+    min-width: 100vw;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    height: 5rem;
+    border-radius: .25em;
+}
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.search-bar {
+    border-radius: 1.5em;
+    border: 1px rgba(255, 255, 255, 0.1) solid;
+    background-color: rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    display: flex;
+    gap: .5em;
+    padding: .5em;
+}
+
+.search {
+    padding: .5em;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+}
+
+.search:focus {
+    border: none;
+    outline: none;
+
+}
+
+.list {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.list>* {
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: .5em;
+    border: 1px rgba(255, 255, 255, 0.1) solid;
+    padding: 1em;
+    padding-inline: 2em;
+    cursor: pointer;
+    transition: 250ms;
+    font-weight: 550;
+}
+
+.list>*:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.list>*:hover .arrow-icon{
+    transform: rotate(180deg);
+}
+
+.icon {
+    height: 1.5em;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.search-icon {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.arrow-icon {
+    height: .75em;
+    transition: 250ms ;
+}
+
+.content{
+    width: clamp(900px, 80vw, 1500px);
+    margin-inline: auto;
+    margin-top: 4rem;
+}
+
+.heading {
+    color: white;
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
