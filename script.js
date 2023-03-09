@@ -5,5 +5,5 @@ search.addEventListener("focus", e => {
     searchBar.style.border = "1px solid white"
 })
 search.addEventListener("focusout", e => {
-    searchBar.style.border = "none"
+    searchBar.style.border = "1px rgba(255, 255, 255, 0.1) solid"
 })
